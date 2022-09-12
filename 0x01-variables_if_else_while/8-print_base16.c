@@ -1,22 +1,24 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - print if the number is positive, zero, or negative
- *
- * Description: using the main function
- * this program prints “Programming is positive, zero or negative
- * Return: Always 0
+ * main - Entry point
+ * Description: Print base 16 numbers
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-char c;
-for (c = 'o'; c <= '9'; c++)
-{
-	putchar(c);
-}
-for (c = 'a'; c <= 'f'; c++)
-{
-	putchar(c);
-}
-putchar('\n');
-return (0);
+	char c;
+	char d = '0';
+
+	while (d <= '9')
+	{
+		putchar(d);
+		d++;
+	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }
